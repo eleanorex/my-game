@@ -18,6 +18,7 @@ function checkGuess() {
     } else if (attempts >= maxAttempts) {
         messageElement.textContent = "Game over. The guessed number was " + secretNumber + '.😞';
         document.body.style.backgroundColor = '#a10000';
+        playSound("wrong")
         button.disabled = true;
         text.disabled = true;
     } else if (guess < secretNumber) {
