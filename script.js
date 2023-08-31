@@ -10,7 +10,7 @@ function checkGuess() {
     const remainingAttempts = maxAttempts - attempts;
 
     if (guess === secretNumber) {
-        messageElement.textContent = 'Congrats! You guessed the number ' + secretNumber + ' in ' + attempts + ' attempts 😊 ';
+        messageElement.textContent = 'You guessed the number ' + secretNumber + ' in ' + attempts + ' attempts 😊 ';
         document.body.style.backgroundColor = 'green';
         playSound("correct")
         button.disabled = true;
