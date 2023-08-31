@@ -34,4 +34,7 @@ button {
     height: 30px;
     font-size: 25px;
     box-shadow: none;
+    border: 1px solid black;
+    border-radius: 6px;
+
 }

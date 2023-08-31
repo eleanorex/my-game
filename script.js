@@ -22,11 +22,11 @@ function checkGuess() {
         button.disabled = true;
         text.disabled = true;
     } else if (guess < secretNumber) {
-        messageElement.textContent = 'Try a bigger number. You have ' + remainingAttempts +' attempts left.';
+        messageElement.textContent = 'Try a bigger number. You have ' + remainingAttempts + ' attempts left.';
         document.body.style.backgroundColor = '#a10000';
         playSound("wrong")
     } else {
-        messageElement.textContent = 'Try a smaller number. You have ' + remainingAttempts +' attempts left.';
+        messageElement.textContent = 'Try a smaller number. You have ' + remainingAttempts + ' attempts left.';
         document.body.style.backgroundColor = '#a10000';
         playSound("wrong")
     }
